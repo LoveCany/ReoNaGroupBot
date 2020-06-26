@@ -1,11 +1,11 @@
 import sys
-from nonebot import on_command, CommandSession
+from nonebot import on_command, CommandSession, permission
 import config
 
 sys.path.append('..')
 
 
-@on_command('bonus', aliases=('特典', '特典图'))
+@on_command('bonus', aliases=('特典', '特典图'), permission=permission.EVERYBODY)
 async def bonusPic(session: CommandSession):
     if session.event.group_id == config.GROUP_ID:
         title = session.get('title')
