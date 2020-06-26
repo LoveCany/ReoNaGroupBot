@@ -22,6 +22,7 @@ async def _(session: CommandSession):
             return
     if not arg:
         session.pause(f'[CQ:at,qq={session.event.user_id}]标题不能为空！')
+        return
     session.state[session.current_key] = arg
 
 
