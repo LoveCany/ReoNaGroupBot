@@ -1,5 +1,5 @@
 import sys
-from nonebot import on_command, CommandSession, permission
+from nonebot import on_command, CommandSession
 import config
 
 sys.path.append('..')
