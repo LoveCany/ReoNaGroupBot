@@ -27,7 +27,7 @@ async def _(session: CommandSession):
 
 async def getBonusPic(title: str, user_id: int) -> str:
     # 需要将resources文件夹下的bonusPic子文件夹复制到CoolQ Pro的data\image文件夹下以保证图片正常发送
-    titleList = ['ELZA', 'SWEET HURT', 'forget-me-not', 'Prologue', 'Null']  # 对应标题名称
+    titleList = ['ELZA', 'SWEET HURT', 'forget-me-not', 'Prologue', 'Null', 'ANIMA']  # 对应标题名称
     for tmpTitle in titleList:
         if title.lower() == tmpTitle.lower():
             return f'[CQ:image,file=bonusPic/{tmpTitle}.jpg]'
